@@ -21,6 +21,8 @@ a {
   color: #fff;
   display: flex;
   justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .container {
@@ -102,7 +104,7 @@ button.sign-up {
 .items ul {
   list-style: none;
   display: flex;
-  flex-flow: nowrap row;
+  flex-flow: wrap row;
   gap: 24px;
   margin: 0;
   padding: 0;
@@ -148,13 +150,52 @@ h2 {
   font-size: 14px;
   font-style: italic;
   text-align: right;
-  margin: -10px 10px 0 0;
+  font-weight: bold;
+  margin: -10px 60px 0 0;
 }
 
 .content,
-.quote-area {
+.quote-area,
+.call-box {
   margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.call-out {
+  display: flex;
+  justify-content: center;
+}
+
+.call-box {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex: 1 1 auto;
+  background-color: #3882f6;
+  color: #fff;
+  border-radius: 7px;
+  padding: 20px;
+  align-items: center;
+}
+
+.call-box p span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.call-box button {
+  border: 1px solid #fff;
 }
 
 .footer {
+  background-color: #1f2937;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e5e7eb;
+  font-size: 13px;
 }
